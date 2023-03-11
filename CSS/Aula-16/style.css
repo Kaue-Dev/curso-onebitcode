@@ -1,0 +1,20 @@
+main {
+    background-color: rgb(223, 223, 223);
+    margin: 0 auto 0 auto;
+    width: 60%;
+    padding: 20px 60px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #1f8f8f;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

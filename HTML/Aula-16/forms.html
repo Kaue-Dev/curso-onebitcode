@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um form para pesquisar no Google</title>
+</head>
+
+<body>
+    <h2>Encontre no Google</h2>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="text" id="q" name="q" placeholder="OneBitCode">
+        <input type="submit" value="Pesquisar">
+    </form>
+
+    <hr>
+
+    <h2>Form com validação</h2>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="q">O que deseja pesquisar?</label>
+        <input type="text" id="q" name="q" placeholder="OneBitCode" required>
+        <!-- required, min e max, autocomplet, datalist -->
+        <input type="submit" value="Pesquisar">
+    </form>
+</body>
+</html>

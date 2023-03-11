@@ -1,0 +1,13 @@
+* { /*Seleciona tudo*/
+    text-decoration: none;
+}
+
+li > a { /*Seleciona apenas o elemento filho do primeiro*/
+    text-decoration: none;
+}
+
+h1 + h3 { /*Seleciona o elemento depois do primeiro*/
+    text-decoration: none;
+}
+
+

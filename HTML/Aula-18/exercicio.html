@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: Criando seu primeiro Form</title>
+</head>
+
+<body>
+    <h1>Cadastro da liga dos astronautas</h1>
+
+    <form>
+        <label><strong>Nome:</strong> </label><input type="text" required> <br>
+        <br>
+        <label><strong>Email:</strong> </label><input type="email" required>
+        <label><strong>Password:</strong> </label><input type="password" required> <br>
+        <br>
+        
+        <label><strong>Data de nascimento:</strong> </label><input type="date" required>
+        <label><strong>Foto:</strong> </label><input type="file"> <br>
+        <br>
+
+        <label><strong>Nacionalidade:</strong> </label><input list="nacionalidade" required autocomplete="nacionalidade">
+        <datalist id="nacionalidade">
+            <option value="Norte Americano">
+            <option value="Russo">
+            <option value="Brasileiro">
+        </datalist>
+        <label><strong>Gênero:</strong> </label>
+        F<input type="radio">
+        M<input type="radio"> <br>
+        <br>
+
+        <label><strong>Principais qualidades:</strong></label> <br>
+        | Inteligencia<input type="checkbox">
+        | Resiliencia<input type="checkbox">
+        | Preparo<input type="checkbox">
+        | Educação<input type="checkbox"> <br>
+        <br>
+
+        <textarea cols="30" rows="10" placeholder="Porque você quer ser astronauta"></textarea> <br>
+        <br>
+
+        <input type="submit" value="Criar">
+    </form>
+</body>
+</html>

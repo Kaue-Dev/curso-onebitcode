@@ -1,0 +1,64 @@
+.imagens {
+    width: 765px;
+    height: auto;
+}
+
+.textos {
+    font-size: 22px;
+}
+
+@media (max-width: 2560px) and (min-width: 1440px) {
+    .imagens {
+        width: 50%;
+    }
+
+    .titulos {
+        font-size: 38px;
+    }
+
+    .textos {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px){
+    .titulos {
+        font-size: 32px;
+    }
+
+    .textos {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .imagens {
+        width: 100%;
+    }
+
+    .titulos {
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .textos {
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 430px) {
+    .imagens {
+        width: 100%;
+    }
+
+    .titulos {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .textos {
+        text-align: center;
+        font-size: 18px;
+    }
+}

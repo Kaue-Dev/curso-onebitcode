@@ -1,0 +1,30 @@
+.imagens {
+    width: 765px;
+    height: auto;
+}
+
+.textos {
+    font-size: 22px;
+}
+
+@media (max-width: 785px) {
+    .imagens {
+        width: 50%;
+    }
+
+    .textos {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 520px) {
+    .imagens {
+        width: 100%;
+        height: auto;
+    }
+
+    .textos {
+        font-size: 18px;
+        text-align: center;
+    }
+}

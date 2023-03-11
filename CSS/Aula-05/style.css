@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/17520.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h2 {
+    background-color: #00ff99;
+    border: 2px solid #ff0640;
+    border-style: dashed;
+}

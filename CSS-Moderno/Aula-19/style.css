@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Inicio Header */
+header {
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.buttons {
+    margin-right: 50px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    margin: 0 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    border-bottom: 2px solid #000;
+}
+/* Fim Header */
+
+/* Inicio boas-vindas */
+.boas-vindas h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-top: 25px;
+}
+
+.boas-vindas p {
+    padding-top: 5px;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+/* Fim boas-vindas */
+
+/* Inicio contéudo principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "main-content sidebar-content";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.sidebar-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card {
+    width: 280px;
+    height: 380px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #000;
+}
+
+.card-title {
+    font-size: 22px;
+    padding: 8px 5px;
+}
+.card-description {
+    padding: 8px 5px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: main-content;
+}
+
+.sidebar-content {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    max-height: fit-content;
+    grid-area: sidebar-content;
+}
+
+.sidebar-title {
+    font-size: 22px;
+    padding: 10px 0 25px 0;
+    text-align: center;
+}
+
+.sidebar-card {
+    width: 75%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-card:hover {
+    border-color: #fff;
+}
+/* Fim conteúdo principal */
+
+/* Inicio do footer */
+footer {
+    background-color: #2c2c2c;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 50px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* Fim do footer */
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .sidebar-content {
+        max-height: 1100px;
+    }
+}
+
+@media (max-width: 630px) {
+    .grid-container {
+        grid-template-areas: 
+        "main-content"
+        "sidebar-content";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar-content {
+        min-width: auto;
+        min-height: 1600px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 566px) {
+    .buttons button {
+        font-size: 16px;
+        margin: 0 4px;
+    }
+
+    .buttons {
+        margin-right: 20px;
+    }
+
+    .logo {
+        width: 170px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 398px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .buttons {
+        margin-left: 37px;
+    }
+
+    .sidebar-content {
+        min-height: 50%;
+    }
+}
