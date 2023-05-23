@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 - Escalação de Times</title>
+</head>
+
+<body>
+    <hr>
+    <div class="escalar-jogador">
+        <h2>Escalar Jogador</h2>
+
+        <label for="posicao-input">Posição:</label>
+        <input type="text" id="posicao-input" required>
+
+        <label for="nome-input">Nome:</label>
+        <input type="text" id="nome-input" required>
+
+        <label for="camisa-input">N° Camisa:</label>
+        <input type="number" class="camisa-input" required>
+
+        <button onclick="escalar()">
+            Escalar Jogador
+        </button>
+    </div>    
+
+    <section id="jogadores-escalados">
+    </section>
+
+    <hr>
+    
+    <div class="remover-jogador">
+        <h2>Remover Jogador</h2>
+
+        <label for="camisa-input">N° Camisa:</label>
+        <input type="number" class="camisa-input">
+
+        <button onclick="remover()">
+            Remover Jogador
+        </button>
+    </div>
+
+    <script src="exercicio.js"></script>
+</body>
+</html>
